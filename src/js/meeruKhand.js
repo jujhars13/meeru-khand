@@ -19,4 +19,9 @@ surs.map(function(surSet){
 	});
 	overallOutput.push(['-']);
 });
-console.log(overallOutput);
+
+
+
+module.exports = (surs) => {
+	
+};
