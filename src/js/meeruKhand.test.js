@@ -13,7 +13,7 @@ describe("meerukhand", () => {
       ["r", "g", "s"],
       ["g", "r", "s"],
     ];
-    assert.equal(results[0], expected);
+    assert.deepEqual(results[0], expected);
   });
 
   it("returns the right sequence for first line of siri and 3 surs", () => {
@@ -26,7 +26,7 @@ describe("meerukhand", () => {
       ["R", "g", "s"],
       ["g", "R", "s"],
     ];
-    assert.equal(results[0], expected);
+    assert.deepEqual(results[0], expected);
   });
 
 });

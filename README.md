@@ -22,6 +22,15 @@ npm run watch
 npm run serve
 ```
 
+### Unit tests
+
+Unit tests for the meeru-khand lib are found in `src/js`
+
+```bash
+# to run tests
+npm run test
+```
+
 ## Licence
 
 [MIT](LICENSE)
