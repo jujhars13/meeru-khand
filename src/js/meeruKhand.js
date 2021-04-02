@@ -22,23 +22,23 @@ var pattern = [
   [3, 2, 1],
 ];
 
-var overallOutput = [];
-surs.map(function (surSet) {
-  pattern.forEach(function (el, index, arr) {
-    let output = el.map(function (e) {
-      return surSet[e - 1];
-    });
-    overallOutput.push(output);
-  });
-  overallOutput.push(["-"]);
-});
 
 module.exports = (inputSurs, number = 3) => {
-  const output = [];
-	inputSurs.split("").map((sur) => {
-	  
-		console.log(sur);
-  });
+  // const output = [];
+  // inputSurs.split("").map((sur) => {
 
-  return output;
+  // 	console.log(sur);
+  // });
+
+  // return output;
+  const overallOutput = [];
+  surs.map((surSet) => {
+    pattern.forEach(function (el, index, arr) {
+      let output = el.map((e) => surSet[e - 1]);
+      overallOutput.push([output]);
+    });
+    overallOutput.push(["-"]);
+  });
+  console.log(overallOutput);
+  return overallOutput;
 };
