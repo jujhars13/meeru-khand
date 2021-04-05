@@ -1,5 +1,6 @@
-# meeru-khand
-Website to generate Indian raag meeru-khand sequences (skeleton divisions) 
+# Meeru Khand Generator
+
+Website to generate Indian raag meeru-khand sequences (skeleton divisions)
 
 [Merukhand](https://en.wikipedia.org/wiki/Merukhand} is an improvisational style in Hindustani classical music involving permutations of a fixed set of swaras or notes (meru, axis or skeleton) broken up in various ways (khand, fragment), while retaining the proper emphasis on various notes as required by the raga.</p>
 
