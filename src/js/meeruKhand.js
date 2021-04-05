@@ -13,32 +13,37 @@ var surs = [
   ["D", "N", "S^"],
 ];
 
-var pattern = [
-  [1, 2, 3],
-  [2, 1, 3],
-  [1, 3, 2],
-  [3, 1, 2],
-  [2, 3, 1],
-  [3, 2, 1],
-];
-
+const patterns = {
+  3: [
+    [1, 2, 3],
+    [2, 1, 3],
+    [1, 3, 2],
+    [3, 1, 2],
+    [2, 3, 1],
+    [3, 2, 1],
+  ],
+  4: [
+    [1, 2, 3, 4],
+    [2, 1, 3, 4],
+    [1, 3, 2, 4],
+    [3, 1, 2, 4],
+    [2, 3, 1, 4],
+    [3, 2, 1, 4],
+  ],
+};
 
 module.exports = (inputSurs, number = 3) => {
-  // const output = [];
-  // inputSurs.split("").map((sur) => {
-
-  // 	console.log(sur);
-  // });
-
-  // return output;
   const overallOutput = [];
+  const pattern = patterns[number];
+  console.log(pattern);
   surs.map((surSet) => {
-    pattern.forEach(function (el, index, arr) {
+    let set = [];
+
+    pattern.forEach((el, index, arr) => {
       let output = el.map((e) => surSet[e - 1]);
-      overallOutput.push([output]);
+      set.push(output);
     });
-    overallOutput.push(["-"]);
+    overallOutput.push(set);
   });
-  console.log(overallOutput);
   return overallOutput;
 };
