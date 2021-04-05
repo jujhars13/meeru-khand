@@ -4,7 +4,7 @@ const container = document.getElementById("container");
 const surs = meerukhand(null, 3);
 
 const tbl = document.createElement("table");
-tbl.classList="table table-striped";
+tbl.classList="table table-striped fs-4";
 const tbody = document.createElement("tbody");
 
 surs.forEach((lines) => {
