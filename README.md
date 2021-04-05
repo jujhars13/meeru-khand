@@ -5,6 +5,7 @@ Website to generate Indian raag meeru-khand sequences (skeleton divisions)
 
 Hosted using github pages at [meeru-khand.jujhar.com](https://meeru-khand.jujhar.com)
 
+![example output](table.png)
 ## Deployment
 
 Deploying using github pages (hence the unorthodox use of the `/docs/` directory for publishing)
@@ -16,6 +17,7 @@ Deploying using github pages (hence the unorthodox use of the `/docs/` directory
 npm install
 
 # to build prod release in /docs
+# you'll need to git commit this
 npm run build
 
 # or dev workflow
