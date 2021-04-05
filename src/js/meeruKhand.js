@@ -32,7 +32,14 @@ const patterns = {
   ],
 };
 
-module.exports = (inputSurs, number = 3) => {
+/**
+ * Meeru Khand generator function
+ * 
+ * @param {string} taath 
+ * @param {3|4|5} number of surs you want
+ * @returns an array of meerukhand notes
+ */
+module.exports = (taath, number = 3) => {
   const overallOutput = [];
   const pattern = patterns[number];
   console.log(pattern);
