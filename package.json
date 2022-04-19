@@ -24,7 +24,7 @@
     "copy-webpack-plugin": "^7.0.0",
     "html-webpack-plugin": "^4.5.1",
     "install": "^0.13.0",
-    "mocha": "^8.3.2",
+    "mocha": "^9.2.2",
     "prettier": "^2.2.1",
     "reload": "^3.1.1",
     "webpack": "^5.16.0",
